@@ -1,17 +1,21 @@
 package com.example.intelligentbuildingmanagement;
 
-public class LJZIntroduction extends MainActivity{
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
+
+public class LJZIntroduction extends Activity{
 
 	@Override
-	public void init() {
+	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Action() {
-		// TODO Auto-generated method stub
-		
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);  
+        //…Ë÷√»´∆¡  
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,   
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		setContentView(R.layout.main);
 	}
 
 }
